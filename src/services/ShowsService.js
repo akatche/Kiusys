@@ -18,7 +18,8 @@ export const getShowsByPage = async (page) => {
         type: show.type,
         network: show.network?.name,
         officialSite: show.officialSite,
-        genres: show.genres
+        genres: show.genres,
+        url: show.url
       };
     });
 

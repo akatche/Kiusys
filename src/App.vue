@@ -1,26 +1,17 @@
 <template>
-  <div id="app">
+  <MainApp id="app">
     <ShowList />
-  </div>
+  </MainApp>
 </template>
 
 <script>
-import ShowList from "@/components/ShowList.vue";
+import ShowList from "@/components/ShowList/Index.vue";
+import MainApp from "@/App.styles";
 export default {
   name: "App",
   components: {
     ShowList,
+    MainApp
   },
 };
 </script>
-
-<style scoped>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
