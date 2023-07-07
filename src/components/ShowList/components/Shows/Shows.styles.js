@@ -3,8 +3,12 @@ import styled from 'vue-styled-components';
 export const ShowContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-
+  
   @media (min-width: 770px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: 1024px) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   
